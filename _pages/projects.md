@@ -30,81 +30,11 @@ horizontal: false
 <div class="projects">
 <h2 class="category" style="text-align: left; border-bottom: 1px solid var(--global-divider-color); padding-bottom: 0.5rem;">Support</h2>
 
+{% assign sorted_support = site.support | sort: "importance" %}
+
 <div class="row row-cols-1 row-cols-md-3 g-4">
-
-  <!-- NRF Card -->
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/img/support/nrf.jpg" class="card-img-top p-3" alt="NRF" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(0.7rem, 1.5vw, 0.9rem); line-height: 1.2; min-height: 2.4rem; display: flex; align-items: center;">National Research Foundation of Korea (NRF)</h5>
-        <ul class="list-unstyled mb-0 flex-grow-1" style="font-size: clamp(0.75rem, 1.5vw, 0.85rem); line-height: 1.6; color: #555; text-align: left; hyphens: auto;">
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2023.12-2028.12</strong>
-            <span style="display: block;">Focused Ultrasound-stimulated Gamma Band for Alzheimer Disease Therapy and the Resulting Brain Pulsatility</span>
-          </li>
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2022-2025</strong>
-            <span style="display: block;">Sample Project Title 2</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- TIPA Card -->
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/img/support/tipa.jpg" class="card-img-top p-3" alt="TIPA" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(0.7rem, 1.5vw, 0.9rem); line-height: 1.2; min-height: 2.4rem; display: flex; align-items: center;">Korea Technology and Information Promotion Agency for SMEs</h5>
-        <ul class="list-unstyled mb-0 flex-grow-1" style="font-size: clamp(0.75rem, 1.5vw, 0.85rem); line-height: 1.6; color: #555; text-align: left; hyphens: auto;">
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2023.07-2027.07</strong>
-            <span style="display: block;">Development of a Transurethral Ultrasound-guided Focused Ultrasound System for BPH Treatment</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- FUSF Card -->
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/img/support/fusf.png" class="card-img-top p-3" alt="MSIT" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(0.7rem, 1.5vw, 0.9rem); line-height: 1.2; min-height: 2.4rem; display: flex; align-items: center;">Focused Ultrasound Foundation</h5>
-        <ul class="list-unstyled mb-0 flex-grow-1" style="font-size: clamp(0.75rem, 1.5vw, 0.85rem); line-height: 1.6; color: #555; text-align: left; hyphens: auto;">
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2023-2026</strong>
-            <span style="display: block;">Sample Project Title 3</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- JNU Card -->
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/img/support/erc.png" class="card-img-top p-3" alt="JNU" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(0.7rem, 1.5vw, 0.9rem); line-height: 1.2; min-height: 2.4rem; display: flex; align-items: center;">Jeju National University</h5>
-        <ul class="list-unstyled mb-0 flex-grow-1" style="font-size: clamp(0.75rem, 1.5vw, 0.85rem); line-height: 1.6; color: #555; text-align: left; hyphens: auto;">
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2022-2024</strong>
-            <span style="display: block;">Sample Project Title 4</span>
-          </li>
-          <li class="mb-3">
-            <strong style="color: #333; display: block; margin-bottom: 0.25rem;">2021-2023</strong>
-            <span style="display: block;">Sample Project Title 5</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add more support cards here -->
-
+  {% for support in sorted_support %}
+    {% include support.liquid %}
+  {% endfor %}
 </div>
 </div>
