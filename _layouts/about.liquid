@@ -38,7 +38,10 @@ layout: default
           {% if page.profile.name %}
             <div class="profile-name text-center mt-3 mb-2">
               {% if page.profile.link %}
-                <a href="{{ page.profile.link | relative_url }}" style="color: var(--global-text-color); text-decoration: none; font-weight: 600; font-size: 1.1rem;">
+                <a
+                  href="{{ page.profile.link | relative_url }}"
+                  style="color: var(--global-text-color); text-decoration: none; font-weight: 600; font-size: 1.1rem;"
+                >
                   {{ page.profile.name }}
                 </a>
               {% else %}
