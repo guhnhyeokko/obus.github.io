@@ -126,6 +126,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-therapeutic-ultrasound",
+          title: 'Therapeutic Ultrasound',
+          description: "Non-invasive precision treatments for neurological conditions",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/therapeutic_ultrasound/";
             },},{id: "support-focused-ultrasound-foundation",
           title: 'Focused Ultrasound Foundation',
           description: "",
