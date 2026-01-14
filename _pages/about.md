@@ -34,24 +34,3 @@ projects:
 ---
 
 Our research group focuses on **underwater acoustics**, **diagnosis**, and **therapeutic ultrasound** based on various characteristics of **ultrasound technology**. In **underwater environments** where light usage is limited, we study underwater communication, seabed exploration through sonar, and plankton detection using ultrasonic scattering characteristics. In the field of **diagnostic ultrasound**, we conduct research on cardiovascular diseases such as arteriosclerosis through both in vitro and in vivo experiments, as well as numerical simulations of **red blood cell aggregation**. For **therapeutic applications**, we perform fundamental research on brain lesion treatment using High Intensity Focused Ultrasound (HIFU) technology. By leveraging the diverse properties of ultrasound, our work spans both underwater acoustics and medical applications.
-
-<div class="row mt-4 mb-4">
-  <div class="col-md-4 mb-3">
-    <div class="research-area-card">
-      <img src="/assets/img/research/underwater.jpg" alt="Underwater Acoustics" class="img-fluid rounded" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-      <h5 class="text-center mt-2">Underwater Acoustics</h5>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="research-area-card">
-      <img src="/assets/img/research/diagnosis.jpg" alt="Diagnostic Ultrasound" class="img-fluid rounded" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-      <h5 class="text-center mt-2">Diagnostic Ultrasound</h5>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="research-area-card">
-      <img src="/assets/img/research/therapeutic.jpg" alt="Therapeutic Ultrasound" class="img-fluid rounded" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-      <h5 class="text-center mt-2">Therapeutic Ultrasound</h5>
-    </div>
-  </div>
-</div>
