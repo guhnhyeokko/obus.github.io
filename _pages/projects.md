@@ -30,7 +30,11 @@ horizontal: false
 <div class="projects">
 <h2 class="category" style="text-align: left; border-bottom: 1px solid var(--global-divider-color); padding-bottom: 0.5rem;">Support</h2>
 
-{% assign sorted_support = site.support | sort: "importance" %}
+{% if site.support %}
+  {% assign sorted_support = site.support | sort: "importance" %}
+{% else %}
+  {% assign sorted_support = "" | split: "" %}
+{% endif %}
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
   {% for support in sorted_support %}
