@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="로고.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="263.57405"
+     inkscape:cy="95.989745"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid4"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="70.106089"
+       y="65.137941"
+       width="93.290774"
+       height="40.849217"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g9">
+      <g
+         id="g4"
+         transform="matrix(1.8524686,0,0,1.8524686,-27.938239,-86.483497)">
+        <text
+           xml:space="preserve"
+           id="text1"
+           style="font-size:26.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#000000"><tspan
+             x="70.105469"
+             y="89.467511"
+             id="tspan12"><tspan
+               style="fill:#0000ff"
+               id="tspan9">O</tspan><tspan
+               style="fill:#008000"
+               id="tspan10">B</tspan><tspan
+               style="font-weight:bold"
+               id="tspan11">US</tspan></tspan></text>
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.01452"
+           id="rect2"
+           width="4.9949746"
+           height="3.5558598"
+           x="95.226616"
+           y="85.916183"
+           ry="0" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke-width:1.0361"
+           id="rect2-8"
+           width="5.0833631"
+           height="3.6442482"
+           x="127.47031"
+           y="69.977257"
+           ry="0" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:8.71067px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:1.00508"
+         x="104.03165"
+         y="92.049515"
+         id="text4"
+         transform="scale(1.0050758,0.99494983)"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           x="104.03165"
+           y="92.049515"
+           style="stroke-width:1.00508"><tspan
+   style="font-weight:bold;fill:#0000ff;stroke-width:1.00508"
+   id="tspan5">O</tspan>cean <tspan
+   style="font-weight:bold;fill:#008000;stroke-width:1.00508"
+   id="tspan6">B</tspan>iomedical <tspan
+   style="font-weight:bold;stroke-width:1.00508"
+   id="tspan7">U</tspan>ltra<tspan
+   style="font-weight:bold;stroke-width:1.00508"
+   id="tspan8">S</tspan>ound Lab</tspan></text>
+    </g>
+  </g>
+</svg>
