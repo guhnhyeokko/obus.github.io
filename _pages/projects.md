@@ -34,13 +34,13 @@ horizontal: false
 
   <!-- NRF Card -->
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/nrf.jpg" class="card-img-top p-3" alt="NRF" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body">
-        <h5 class="card-title">National Research Foundation of Korea (NRF)</h5>
-        <ul class="list-unstyled">
-          <li><strong>2024-2027</strong>: Sample Project Title 1</li>
-          <li><strong>2022-2025</strong>: Sample Project Title 2</li>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold mb-3" style="font-size: 1.1rem; line-height: 1.4;">National Research Foundation of Korea (NRF)</h5>
+        <ul class="list-unstyled mb-0" style="font-size: 0.9rem; line-height: 1.8;">
+          <li class="mb-2"><span class="badge bg-primary me-2">2024-2027</span>Sample Project Title 1</li>
+          <li class="mb-2"><span class="badge bg-primary me-2">2022-2025</span>Sample Project Title 2</li>
         </ul>
       </div>
     </div>
@@ -48,12 +48,12 @@ horizontal: false
 
   <!-- MSIT Card -->
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/fusf.png" class="card-img-top p-3" alt="MSIT" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body">
-        <h5 class="card-title">Ministry of Science and ICT</h5>
-        <ul class="list-unstyled">
-          <li><strong>2023-2026</strong>: Sample Project Title 3</li>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold mb-3" style="font-size: 1.1rem; line-height: 1.4;">Ministry of Science and ICT</h5>
+        <ul class="list-unstyled mb-0" style="font-size: 0.9rem; line-height: 1.8;">
+          <li class="mb-2"><span class="badge bg-primary me-2">2023-2026</span>Sample Project Title 3</li>
         </ul>
       </div>
     </div>
@@ -61,13 +61,13 @@ horizontal: false
 
   <!-- JNU Card -->
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/erc.png" class="card-img-top p-3" alt="JNU" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
-      <div class="card-body">
-        <h5 class="card-title">Jeju National University</h5>
-        <ul class="list-unstyled">
-          <li><strong>2022-2024</strong>: Sample Project Title 4</li>
-          <li><strong>2021-2023</strong>: Sample Project Title 5</li>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold mb-3" style="font-size: 1.1rem; line-height: 1.4;">Jeju National University</h5>
+        <ul class="list-unstyled mb-0" style="font-size: 0.9rem; line-height: 1.8;">
+          <li class="mb-2"><span class="badge bg-primary me-2">2022-2024</span>Sample Project Title 4</li>
+          <li class="mb-2"><span class="badge bg-primary me-2">2021-2023</span>Sample Project Title 5</li>
         </ul>
       </div>
     </div>
