@@ -35,31 +35,41 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "members-changsoo-kim",
+          title: 'Changsoo Kim',
+          description: "Diagnostic and Therapeutic Ultrasound, Acoustic simulation",
+          section: "Members",handler: () => {
+              window.location.href = "/members/changsoo-kim/";
+            },},{id: "members-cheong-ah-lee",
+          title: 'Cheong-Ah Lee',
+          description: "Hemodynamics, Numerical simulation of RBC kinetics",
+          section: "Members",handler: () => {
+              window.location.href = "/members/cheongah-lee/";
+            },},{id: "members-cynthia-imtiaz",
+          title: 'Cynthia Imtiaz',
+          description: "Diagnostic Imaging analysis and Image Processing",
+          section: "Members",handler: () => {
+              window.location.href = "/members/cynthia-imtiaz/";
+            },},{id: "members-postdoc",
+          title: 'Postdoc',
+          description: "Former PhD student, now at Company Z",
+          section: "Members",handler: () => {
+              window.location.href = "/members/drKim/";
             },},{id: "members-guhnhyeok-ko",
-          title: 'GuhnHyeok ko',
+          title: 'GuhnHyeok Ko',
           description: "Underwater Acoustics, Signal Processing",
           section: "Members",handler: () => {
               window.location.href = "/members/guhnhyeok/";
-            },},{id: "members-sample-alumni",
-          title: 'Sample Alumni',
-          description: "Former PhD student, now at Company Z",
+            },},{id: "members-junbin-ko",
+          title: 'JunBin Ko',
+          description: "Underwater acoustics, Signal processing",
           section: "Members",handler: () => {
-              window.location.href = "/members/sample-alumni/";
-            },},{id: "members-sample-master-student",
-          title: 'Sample Master Student',
-          description: "Master&#39;s student working on project Y",
-          section: "Members",handler: () => {
-              window.location.href = "/members/sample-master/";
-            },},{id: "members-sample-phd-student",
-          title: 'Sample PhD Student',
-          description: "PhD candidate researching topic X",
-          section: "Members",handler: () => {
-              window.location.href = "/members/sample-phd/";
+              window.location.href = "/members/junbin-ko/";
             },},{id: "members-dong-guk-paeng",
           title: 'Dong-Guk Paeng',
           description: "Professor of the Ocean System Engineering Department",
           section: "Members",handler: () => {
-              window.location.href = "/members/sample-pi/";
+              window.location.href = "/members/prof/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
