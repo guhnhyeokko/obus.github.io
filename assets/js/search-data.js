@@ -116,6 +116,26 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "support-focused-ultrasound-foundation",
+          title: 'Focused Ultrasound Foundation',
+          description: "",
+          section: "Support",handler: () => {
+              window.location.href = "/support/fusf/";
+            },},{id: "support-jeju-national-university",
+          title: 'Jeju National University',
+          description: "",
+          section: "Support",handler: () => {
+              window.location.href = "/support/jnu/";
+            },},{id: "support-national-research-foundation-of-korea-nrf",
+          title: 'National Research Foundation of Korea (NRF)',
+          description: "",
+          section: "Support",handler: () => {
+              window.location.href = "/support/nrf/";
+            },},{id: "support-korea-technology-and-information-promotion-agency-for-smes",
+          title: 'Korea Technology and Information Promotion Agency for SMEs',
+          description: "",
+          section: "Support",handler: () => {
+              window.location.href = "/support/tipa/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
