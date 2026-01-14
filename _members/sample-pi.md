@@ -3,7 +3,7 @@ layout: member
 group: PI
 group_rank: 1
 title: Dong-Guk Paeng
-lastname: 
+lastname:
 description: Professor of the Ocean System Engineering Department
 
 profile:

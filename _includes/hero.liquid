@@ -1,56 +1,56 @@
 {% if site.hero and site.hero.enabled %}
-<section id="hero-section" class="hero-section">
-  <div class="hero-overlay"></div>
+  <section id="hero-section" class="hero-section">
+    <div class="hero-overlay"></div>
 
-  <div class="hero-media">
-    {% if site.hero.type == 'video' %}
-      <!-- Local MP4 Video -->
-      <video
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        poster="{{ site.hero.fallback_image | relative_url }}"
-      >
-        <source src="{{ site.hero.video_path | relative_url }}" type="video/mp4">
-      </video>
-    {% elsif site.hero.type == 'youtube' %}
-      <!-- YouTube Embed -->
-      <div class="hero-youtube-container">
-        <iframe
-          class="hero-youtube"
-          src="https://www.youtube.com/embed/{{ site.hero.youtube_id }}?autoplay=1&mute=1&loop=1&playlist={{ site.hero.youtube_id }}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+    <div class="hero-media">
+      {% if site.hero.type == 'video' %}
+        <!-- Local MP4 Video -->
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="{{ site.hero.fallback_image | relative_url }}"
+        >
+          <source src="{{ site.hero.video_path | relative_url }}" type="video/mp4">
+        </video>
+      {% elsif site.hero.type == 'youtube' %}
+        <!-- YouTube Embed -->
+        <div class="hero-youtube-container">
+          <iframe
+            class="hero-youtube"
+            src="https://www.youtube.com/embed/{{ site.hero.youtube_id }}?autoplay=1&mute=1&loop=1&playlist={{ site.hero.youtube_id }}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      {% else %}
+        <!-- Image Fallback -->
+        <img
+          class="hero-image"
+          src="{{ site.hero.image_path | relative_url }}"
+          alt="Hero background"
+        >
+      {% endif %}
+    </div>
+
+    <div class="hero-content">
+      {% if site.hero.title %}
+        <h1 class="hero-title">{{ site.hero.title }}</h1>
+      {% endif %}
+      {% if site.hero.subtitle %}
+        <p class="hero-subtitle">{{ site.hero.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    {% if site.hero.scroll_indicator %}
+      <div class="hero-scroll-indicator">
+        <a href="#main-content" class="scroll-down" aria-label="Scroll to content">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
       </div>
-    {% else %}
-      <!-- Image Fallback -->
-      <img
-        class="hero-image"
-        src="{{ site.hero.image_path | relative_url }}"
-        alt="Hero background"
-      >
     {% endif %}
-  </div>
-
-  <div class="hero-content">
-    {% if site.hero.title %}
-      <h1 class="hero-title">{{ site.hero.title }}</h1>
-    {% endif %}
-    {% if site.hero.subtitle %}
-      <p class="hero-subtitle">{{ site.hero.subtitle }}</p>
-    {% endif %}
-  </div>
-
-  {% if site.hero.scroll_indicator %}
-  <div class="hero-scroll-indicator">
-    <a href="#main-content" class="scroll-down" aria-label="Scroll to content">
-      <i class="fa-solid fa-chevron-down"></i>
-    </a>
-  </div>
-  {% endif %}
-</section>
+  </section>
 {% endif %}

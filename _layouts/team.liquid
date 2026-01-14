@@ -1,13 +1,12 @@
 ---
 layout: page
 ---
-
 {{ content }}
 
-{% assign groups_order = "PI|Postdoc|PhD|Master|Alumni" | split: "|" %}
+{% assign groups_order = 'PI|Postdoc|PhD|Master|Alumni' | split: '|' %}
 
 {% for group in groups_order %}
-  {% assign members_in_group = site.members | where: "group", group | sort: "lastname" %}
+  {% assign members_in_group = site.members | where: 'group', group | sort: 'lastname' %}
   {% if members_in_group.size > 0 %}
     <h2 class="mt-4">{{ group }}</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
@@ -39,13 +38,19 @@ layout: page
                   <a href="mailto:{{ member.profile.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
                 {% endif %}
                 {% if member.profile.orcid %}
-                  <a href="https://orcid.org/{{ member.profile.orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                  <a href="https://orcid.org/{{ member.profile.orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID"
+                    ><i class="fa-brands fa-orcid"></i
+                  ></a>
                 {% endif %}
                 {% if member.profile.github %}
-                  <a href="https://github.com/{{ member.profile.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com/{{ member.profile.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 {% endif %}
                 {% if member.profile.website %}
-                  <a href="{{ member.profile.website }}" target="_blank" rel="noopener noreferrer" title="Website"><i class="fa-solid fa-globe"></i></a>
+                  <a href="{{ member.profile.website }}" target="_blank" rel="noopener noreferrer" title="Website"
+                    ><i class="fa-solid fa-globe"></i
+                  ></a>
                 {% endif %}
               </div>
             </div>

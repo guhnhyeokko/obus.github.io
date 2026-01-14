@@ -25,7 +25,9 @@ layout: default
         {% endif %}
         <div class="more-info">
           {% if page.profile.email %}
-            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ page.profile.email }}">{{ page.profile.email }}</a></p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> <a href="mailto:{{ page.profile.email }}">{{ page.profile.email }}</a>
+            </p>
           {% endif %}
           {% if page.profile.phone %}
             <p><i class="fa-solid fa-phone"></i> {{ page.profile.phone }}</p>
@@ -36,16 +38,24 @@ layout: default
         </div>
         <div class="social-icons mt-2">
           {% if page.profile.orcid %}
-            <a href="https://orcid.org/{{ page.profile.orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+            <a href="https://orcid.org/{{ page.profile.orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID"
+              ><i class="fa-brands fa-orcid"></i
+            ></a>
           {% endif %}
           {% if page.profile.github %}
-            <a href="https://github.com/{{ page.profile.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/{{ page.profile.github }}" target="_blank" rel="noopener noreferrer" title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           {% endif %}
           {% if page.profile.twitter %}
-            <a href="https://twitter.com/{{ page.profile.twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/{{ page.profile.twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           {% endif %}
           {% if page.profile.linkedin %}
-            <a href="https://www.linkedin.com/in/{{ page.profile.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/{{ page.profile.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           {% endif %}
           {% if page.profile.website %}
             <a href="{{ page.profile.website }}" target="_blank" rel="noopener noreferrer" title="Website"><i class="fa-solid fa-globe"></i></a>
