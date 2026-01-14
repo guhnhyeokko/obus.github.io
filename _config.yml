@@ -7,7 +7,7 @@ title_plain: "OBUS Lab" # plain text title for browser tab
 first_name: Ocean Biomedical UltraSound
 middle_name:
 last_name: Lab
-logo: logo.svg # logo.png # put your logo image in assets/img/ and uncomment this line
+logo: logo.png # logo.png # put your logo image in assets/img/ and uncomment this line
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -27,7 +27,7 @@ back_to_top: true # set to false to disable the back to top button
 # Hero/Landing Section
 # -----------------------------------------------------------------------------
 hero:
-  enabled: true
+  enabled: false
   type: image # 'video', 'youtube', or 'image'
   video_path: assets/video/hero.mp4 # for type: video
   youtube_id: # YouTube video ID for type: youtube
