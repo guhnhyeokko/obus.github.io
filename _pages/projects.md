@@ -37,8 +37,8 @@ horizontal: false
     <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/nrf.jpg" class="card-img-top p-3" alt="NRF" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-size: 0.85rem; line-height: 1.2; min-height: 2.4rem;">National Research Foundation of Korea (NRF)</h5>
-        <ul class="list-unstyled mb-0" style="font-size: 0.85rem; line-height: 1.8; color: #555;">
+        <h5 class="card-title fw-bold mb-3" style="font-size: clamp(0.75rem, 2vw, 1rem); line-height: 1.3;">National Research Foundation of Korea (NRF)</h5>
+        <ul class="list-unstyled mb-0" style="font-size: clamp(0.75rem, 1.8vw, 0.9rem); line-height: 1.8; color: #555;">
           <li class="mb-2"><strong style="color: #333;">2024-2027:</strong> Sample Project Title 1</li>
           <li class="mb-2"><strong style="color: #333;">2022-2025:</strong> Sample Project Title 2</li>
         </ul>
@@ -51,8 +51,8 @@ horizontal: false
     <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/fusf.png" class="card-img-top p-3" alt="MSIT" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-size: 0.85rem; line-height: 1.2; min-height: 2.4rem;">Ministry of Science and ICT</h5>
-        <ul class="list-unstyled mb-0" style="font-size: 0.85rem; line-height: 1.8; color: #555;">
+        <h5 class="card-title fw-bold mb-3" style="font-size: clamp(0.75rem, 2vw, 1rem); line-height: 1.3;">Ministry of Science and ICT</h5>
+        <ul class="list-unstyled mb-0" style="font-size: clamp(0.75rem, 1.8vw, 0.9rem); line-height: 1.8; color: #555;">
           <li class="mb-2"><strong style="color: #333;">2023-2026:</strong> Sample Project Title 3</li>
         </ul>
       </div>
@@ -64,8 +64,8 @@ horizontal: false
     <div class="card h-100 shadow-sm">
       <img src="/assets/img/support/erc.png" class="card-img-top p-3" alt="JNU" style="height: 150px; object-fit: contain; background-color: #f8f9fa;">
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title fw-bold mb-3" style="font-size: 0.85rem; line-height: 1.2; min-height: 2.4rem;">Jeju National University</h5>
-        <ul class="list-unstyled mb-0" style="font-size: 0.85rem; line-height: 1.8; color: #555;">
+        <h5 class="card-title fw-bold mb-3" style="font-size: clamp(0.75rem, 2vw, 1rem); line-height: 1.3;">Jeju National University</h5>
+        <ul class="list-unstyled mb-0" style="font-size: clamp(0.75rem, 1.8vw, 0.9rem); line-height: 1.8; color: #555;">
           <li class="mb-2"><strong style="color: #333;">2022-2024:</strong> Sample Project Title 4</li>
           <li class="mb-2"><strong style="color: #333;">2021-2023:</strong> Sample Project Title 5</li>
         </ul>
