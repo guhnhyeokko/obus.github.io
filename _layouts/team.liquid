@@ -61,13 +61,23 @@ layout: page
                     ></a>
                   {% endif %}
                   {% if member.profile.scholar_userid %}
-                    <a
-                      href="https://scholar.google.com/citations?user={{ member.profile.scholar_userid }}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Google Scholar"
-                      ><i class="ai ai-google-scholar"></i
-                    ></a>
+                    {% if member.profile.scholar_userid contains 'http' %}
+                      <a
+                        href="{{ member.profile.scholar_userid }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Google Scholar"
+                        ><i class="ai ai-google-scholar"></i
+                      ></a>
+                    {% else %}
+                      <a
+                        href="https://scholar.google.com/citations?user={{ member.profile.scholar_userid }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Google Scholar"
+                        ><i class="ai ai-google-scholar"></i
+                      ></a>
+                    {% endif %}
                   {% endif %}
                   {% if member.profile.research_gate %}
                     <a
