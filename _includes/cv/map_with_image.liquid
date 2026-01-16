@@ -1,6 +1,6 @@
-<div class="row align-items-start">
-  <div class="col-md-8">
-    <table class="table table-cv table-sm table-borderless table-responsive">
+<div class="row">
+  <div class="col-md-8 d-flex flex-column justify-content-between">
+    <table class="table table-cv table-sm table-borderless table-responsive mb-0">
       {% for content in entry.contents %}
         <tr>
           <td class="p-1 pr-2 font-weight-bold">
@@ -29,46 +29,46 @@
         </tr>
       {% endfor %}
     </table>
-
-    <div class="social-icons mt-3 ml-1 ml-md-4">
-      {% if page.profile_orcid %}
-        <a href="https://orcid.org/{{ page.profile_orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID"
-          ><i class="fa-brands fa-orcid"></i
-        ></a>
-      {% endif %}
-      {% if page.profile_scholar %}
-        <a
-          href="https://scholar.google.com/citations?user={{ page.profile_scholar }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Google Scholar"
-          ><i class="ai ai-google-scholar"></i
-        ></a>
-      {% endif %}
-      {% if page.profile_github %}
-        <a href="https://github.com/{{ page.profile_github }}" target="_blank" rel="noopener noreferrer" title="GitHub"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      {% endif %}
-      {% if page.profile_twitter %}
-        <a href="https://twitter.com/{{ page.profile_twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
+    <div class="social-icons-horizontal mt-auto">
+      <a href="{{ page.url | relative_url }}" title="CV">
+        <span class="icon-cv">CV</span>
+      </a>
+      {% if page.profile_email %}
+        <a href="mailto:{{ page.profile_email }}" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       {% endif %}
       {% if page.profile_linkedin %}
-        <a href="https://www.linkedin.com/in/{{ page.profile_linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
+        <a href="{{ page.profile_linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
       {% endif %}
-      {% if page.profile_website %}
-        <a href="{{ page.profile_website }}" target="_blank" rel="noopener noreferrer" title="Website"><i class="fa-solid fa-globe"></i></a>
+      {% if page.profile_rss %}
+        <a href="{{ page.profile_rss }}" target="_blank" rel="noopener noreferrer" title="RSS">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      {% endif %}
+      {% if page.profile_researchgate %}
+        <a href="{{ page.profile_researchgate }}" target="_blank" rel="noopener noreferrer" title="ResearchGate">
+          <i class="ai ai-researchgate"></i>
+        </a>
+      {% endif %}
+      {% if page.profile_orcid %}
+        <a href="{{ page.profile_orcid }}" target="_blank" rel="noopener noreferrer" title="ORCID">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      {% endif %}
+      {% if page.profile_scholar %}
+        <a href="{{ page.profile_scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
       {% endif %}
     </div>
   </div>
   <div class="col-md-4 d-flex justify-content-center">
     {% if page.profile_image %}
       {% assign profile_image_path = page.profile_image | prepend: 'assets/img/' %}
-      <div style="max-width: 200px;">
+      <div class="profile-image-container">
         {%
           include figure.liquid
           loading="eager"

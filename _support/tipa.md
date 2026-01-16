@@ -1,7 +1,7 @@
 ---
 title: Korea Technology and Information Promotion Agency for SMEs
 short_name: TIPA
-logo: tipa.jpg
+logo: tipa.png
 importance: 2
 projects:
   - period: 2023.07-2027.07
