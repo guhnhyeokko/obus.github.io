@@ -50,11 +50,6 @@ ninja.data = [{
           description: "Diagnostic Imaging analysis and Image Processing",
           section: "Members",handler: () => {
               window.location.href = "/members/cynthia-imtiaz/";
-            },},{id: "members-postdoc",
-          title: 'Postdoc',
-          description: "Former PhD student, now at Company Z",
-          section: "Members",handler: () => {
-              window.location.href = "/members/drKim/";
             },},{id: "members-guhnhyeok-ko",
           title: 'GuhnHyeok Ko',
           description: "Underwater Acoustics, Signal Processing",
@@ -62,7 +57,7 @@ ninja.data = [{
               window.location.href = "/members/guhnhyeok/";
             },},{id: "members-junbin-ko",
           title: 'JunBin Ko',
-          description: "Underwater acoustics, Signal processing",
+          description: "Therapeutic Ultrasound",
           section: "Members",handler: () => {
               window.location.href = "/members/junbin-ko/";
             },},{id: "members-dong-guk-paeng",
