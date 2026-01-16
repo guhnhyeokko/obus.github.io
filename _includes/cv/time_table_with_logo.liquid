@@ -17,7 +17,11 @@
                   <tr>
                     <td class="pt-2">
                       {% assign logo_path = content.logo | prepend: 'assets/img/' %}
-                      <img src="{{ logo_path | relative_url }}" alt="Institution logo" style="max-width: 60px; max-height: 60px; object-fit: contain;">
+                      <img
+                        src="{{ logo_path | relative_url }}"
+                        alt="Institution logo"
+                        style="max-width: 60px; max-height: 60px; object-fit: contain;"
+                      >
                     </td>
                   </tr>
                 {% endif %}

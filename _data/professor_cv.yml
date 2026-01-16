@@ -20,19 +20,19 @@
     - title: Ph.D. in Engineering
       institution: University Name
       year: YYYY
-      logo: university-logos/phd-university.png  # Add school logo path here
+      logo: university-logos/phd-university.png # Add school logo path here
       description:
         - Add description here
     - title: M.S. in Engineering
       institution: University Name
       year: YYYY
-      logo: university-logos/ms-university.png   # Add school logo path here
+      logo: university-logos/ms-university.png # Add school logo path here
       description:
         - Add description here
     - title: B.S. in Engineering
       institution: University Name
       year: YYYY
-      logo: university-logos/bs-university.png   # Add school logo path here
+      logo: university-logos/bs-university.png # Add school logo path here
 
 - title: Experience
   type: time_table
