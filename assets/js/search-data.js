@@ -100,11 +100,6 @@ ninja.data = [{
           title: 'Therapeutic Ultrasound',
           description: "Non-invasive precision treatments for neurological conditions",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/therapeutic_ultrasound%20-%20%EB%B3%B5%EC%82%AC%EB%B3%B8/";
-            },},{id: "projects-therapeutic-ultrasound",
-          title: 'Therapeutic Ultrasound',
-          description: "Non-invasive precision treatments for neurological conditions",
-          section: "Projects",handler: () => {
               window.location.href = "/projects/therapeutic_ultrasound/";
             },},{id: "support-focused-ultrasound-foundation",
           title: 'Focused Ultrasound Foundation',
