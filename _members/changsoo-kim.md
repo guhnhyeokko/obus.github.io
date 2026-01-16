@@ -3,7 +3,7 @@ layout: member
 group: Postdoctoral Researcher
 title: Changsoo Kim
 lastname: Kim
-description: Diagnostic and Therapeutic Ultrasound, Acoustic simulation
+description: Underwater Acoustics, Diagnostic and Therapeutic Ultrasound
 
 profile:
   name: Changsoo Kim
@@ -16,7 +16,7 @@ profile:
 
 ## About
 
-Postdoctoral researcher specializing in diagnostic and therapeutic ultrasound applications.
+...
 
 ## Research Interests
 

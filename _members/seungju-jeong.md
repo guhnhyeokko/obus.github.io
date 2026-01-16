@@ -8,7 +8,7 @@ description: ~~
 profile:
   name: Seungju Jeong
   position: Undergraduate Student
-  image: prof_pic.jpg
+  image: 11.jpg
   email: seungju834@gmail.com
   github:
   address:

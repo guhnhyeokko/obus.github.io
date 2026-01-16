@@ -8,7 +8,7 @@ description: ~~
 profile:
   name: Sanghyeok Jang
   position: MS Student
-  image: prof_pic.jpg
+  image: sanghyeok.jpg
   email: tkdwkdgur@gmail.com
   github:
   address:

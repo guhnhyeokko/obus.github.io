@@ -8,7 +8,7 @@ description: Diagnostic Imaging analysis and Image Processing
 profile:
   name: Cynthia Imtiaz
   position: MS Student
-  image: prof_pic.jpg
+  image: 11.jpg
   email: cynthiaimtiaz@stu.jejunu.ac.kr
   github:
   address:

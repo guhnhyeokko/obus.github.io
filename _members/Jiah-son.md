@@ -8,7 +8,7 @@ description: ~~
 profile:
   name: Jiah Son
   position: MS Student
-  image: prof_pic.jpg
+  image: 11.jpg
   email: ...
   github:
   address:
