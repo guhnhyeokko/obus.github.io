@@ -8,28 +8,30 @@ from scholarly import scholarly
 
 
 def load_scholar_user_id() -> str:
-    """Load the Google Scholar user ID from the configuration file."""
+    """Load the Google Scholar user ID from the configuration file, or use PI's ID as default."""
     config_file = "_data/socials.yml"
+    default_scholar_id = "Z8N1TMIAAAAJ"  # PI's default Scholar ID
+
     if not os.path.exists(config_file):
         print(
-            f"Configuration file {config_file} not found. Please ensure the file exists and contains your Google Scholar user ID."
+            f"Configuration file {config_file} not found. Using default PI Scholar ID: {default_scholar_id}"
         )
-        sys.exit(1)
+        return default_scholar_id
     try:
         with open(config_file, "r") as f:
             config = yaml.safe_load(f)
         scholar_user_id = config.get("scholar_userid")
         if not scholar_user_id:
             print(
-                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
+                f"No 'scholar_userid' found in the configuration file. Using default PI Scholar ID: {default_scholar_id}"
             )
-            sys.exit(1)
+            return default_scholar_id
         return scholar_user_id
     except yaml.YAMLError as e:
         print(
-            f"Error parsing YAML file {config_file}: {e}. Please check the file for correct YAML syntax."
+            f"Error parsing YAML file {config_file}: {e}. Using default PI Scholar ID: {default_scholar_id}"
         )
-        sys.exit(1)
+        return default_scholar_id
 
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
