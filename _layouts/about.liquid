@@ -59,32 +59,32 @@ layout: default
 
       <!-- News -->
       {% if page.announcements and page.announcements.enabled %}
-        <h2>
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <h2 class="section-header">
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
         </h2>
         {% include news.liquid limit=true %}
       {% endif %}
 
       <!-- Latest posts -->
       {% if page.latest_posts and page.latest_posts.enabled %}
-        <h2>
-          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <h2 class="section-header">
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
         </h2>
         {% include latest_posts.liquid %}
       {% endif %}
 
       <!-- Projects -->
       {% if page.projects and page.projects.enabled %}
-        <h2>
-          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
+        <h2 class="section-header">
+          <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Projects</a>
         </h2>
         {% include projects_home.liquid limit=page.projects.limit %}
       {% endif %}
 
       <!-- Selected papers -->
       {% if page.selected_papers %}
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <h2 class="section-header">
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
         </h2>
         {% include selected_papers.liquid %}
       {% endif %}
