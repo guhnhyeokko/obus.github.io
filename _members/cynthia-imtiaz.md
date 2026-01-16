@@ -1,13 +1,13 @@
 ---
 layout: member
-group: Master Student
+group: Researcher
 title: Cynthia Imtiaz
 lastname: Imtiaz
 description: Diagnostic Imaging analysis and Image Processing
 
 profile:
   name: Cynthia Imtiaz
-  position: MS Student
+  position: Researcher
   image: 11.jpg
   email: cynthiaimtiaz@stu.jejunu.ac.kr
   github:
@@ -16,9 +16,8 @@ profile:
 
 ## About
 
-Master's student specializing in diagnostic imaging and image processing technologies.
+...
 
 ## Research Interests
 
-- Imaging Technologist and Sonographer
-- Diagnostic Imaging analysis and Image Processing
+- ...

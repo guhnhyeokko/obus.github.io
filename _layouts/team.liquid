@@ -7,10 +7,35 @@ layout: page
   | split: '|'
 %}
 
+<!-- Member Count Summary -->
+<p class="mb-5">
+  We have
+  {% assign populated_groups = '' | split: '|' %}
+  {% for group in groups_order %}
+    {% assign members_in_group = site.members | where: 'group', group %}
+    {% if members_in_group.size > 0 %}
+      {% assign group_info = group | append: '##' | append: members_in_group.size %}
+      {% assign populated_groups = populated_groups | push: group_info %}
+    {% endif %}
+  {% endfor %}
+
+  {% for item in populated_groups %}
+    {% assign parts = item | split: '##' %}
+    {% assign g_name = parts[0] %}
+    {% assign g_count = parts[1] %}
+    <a href="#{{ g_name | slugify }}" style="text-decoration: underline; color: inherit;">
+      {{ g_count }}
+      {{ g_name }}
+    </a>
+    {%- unless forloop.last %}, {% endunless %}
+  {% endfor -%}
+  .
+</p>
+
 {% for group in groups_order %}
   {% assign members_in_group = site.members | where: 'group', group | sort: 'lastname' %}
   {% if members_in_group.size > 0 %}
-    <h2 class="mt-5">{{ group }}</h2>
+    <h2 id="{{ group | slugify }}" class="mt-5">{{ group }}</h2>
     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-5 mb-5">
       {% for member in members_in_group %}
         <div class="col mb-4">
