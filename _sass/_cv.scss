@@ -77,29 +77,16 @@ p.location {
   white-space: nowrap;
 }
 
-i.iconlocation {
-  color: var(--global-theme-color);
-  font-size: 0.8rem;
-}
+.institution-info {
+  margin-bottom: 0.5rem;
 
-i.iconinstitution {
-  color: var(--global-theme-color);
-  font-size: 0.95rem;
-  margin-right: 0.3rem;
-}
+  .institution {
+    font-size: 0.95rem;
+  }
 
-i.icondepartment {
-  color: var(--global-theme-color);
-  font-size: 0.8rem;
-  margin-right: 0.3rem;
-}
-
-table.institution {
-  margin-bottom: 1rem;
-}
-
-td.department {
-  font-size: 0.8rem;
+  .department {
+    font-size: 0.8rem;
+  }
 }
 
 div.container-links {

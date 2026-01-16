@@ -17,45 +17,54 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in Engineering
+    - title: Ph.D. in Acoustics
       institution: The Pennsylvania State University (Penn State)
-      year: YYYY
-      logo: university-logos/penn.png # Add school logo path here
+      year: 1998-2002
+      logo: university-logos/penn.png
       description:
         - Add description here
-    - title: M.S. in Engineering
+    - title: M.S. in Ocean Engineering
       institution: Massachusetts Institute of Technology (MIT)
-      year: YYYY
-      logo: university-logos/mit.png # Add school logo path here
+      year: 1995-1997
+      logo: university-logos/mit.png
       description:
         - Add description here
-    - title: M.S. in Engineering
+    - title: M.S. in Earth and Marine Sciences
       institution: Hanyang University
-      year: YYYY
-      logo: university-logos/Hanyang.png # Add school logo path here
+      year: 1991-1993
+      logo: university-logos/Hanyang.png
       description:
         - Add description here
     - title: B.S. in Engineering
       institution: Hanyang University
-      year: YYYY
-      logo: university-logos/Hanyang.png # Add school logo path here
+      year: 1985-1991
+      logo: university-logos/Hanyang.png
 
-- title: Experience
+- title: Employment
   type: time_table
   contents:
-    - title: Professor
-      institution: Department of Ocean System Engineering, Jeju National University
-      year: YYYY - Present
+    - title: Professor (Ocean System Engineering)
+      institution: "Jeju National University: Jeju, Jeju, KR"
+      year: 2003.05 - Present
       description:
-        - Teaching and research in biomedical ultrasound
-        - Leading the Biomedical Ultrasound Lab
-    - title: Associate Professor
-      institution: Jeju National University
-      year: YYYY - YYYY
-    - title: Assistant Professor
-      institution: Jeju National University
-      year: YYYY - YYYY
-
+    - title: Associate Professor in Research (Radiation Oncology)
+      institution: "University of Virginia: Charlottesville, VA, US"
+      year: 2015.01 - 2016.06
+    - title: Merkin Visiting Fellow (Brain Program)
+      institution: "Focused Ultrasound Foundation: Charlottesville, VA, US"
+      year: 2015.01 - 2016.06
+    - title: Research Fellow (Doheny Eye Institue)
+      institution: "University of Southern California: Los Angeles, CA, US"
+      year: 2007.07 - 2008.08
+    - title: Research Associate (Biomedical Engineering)
+      institution: "University of Southern California: Los Angeles, CA, US"
+      year: 2002.08 - 2003.08
+    - title: Researcher (Physical Oceanography/ Acoustics team)
+      institution: "Korea Institute of Ocean Science and Technology: Ansan, Gyeonggi-do, KR"
+      year: 1994.11 - 1995.07
+    - title: Engineer (Research Institute, Noise & Vibration team)
+      institution: "Daewoo Shipbuilding & Marine Engineering: Geojedo, Kyoungsannamdo, KR"
+      year: 1993.12 - 1994.05
 - title: Research Interests
   type: nested_list
   contents:
