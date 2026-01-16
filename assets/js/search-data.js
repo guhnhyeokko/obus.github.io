@@ -101,6 +101,11 @@ ninja.data = [{
           description: "Non-invasive precision treatments for neurological conditions",
           section: "Projects",handler: () => {
               window.location.href = "/projects/therapeutic_ultrasound/";
+            },},{id: "projects-underwater-acoustics",
+          title: 'Underwater Acoustics',
+          description: "~~",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/underwater_acoustics/";
             },},{id: "support-focused-ultrasound-foundation",
           title: 'Focused Ultrasound Foundation',
           description: "",
