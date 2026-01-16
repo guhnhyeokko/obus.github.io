@@ -22,11 +22,13 @@ layout: page
                   {% assign member_link = member.url | relative_url %}
                 {% endif %}
                 <a href="{{ member_link }}" class="d-block h-100">
-                  <img src="{{ member_image_path | relative_url }}"
-                       alt="{{ member.profile.name }}"
-                       class="rounded h-100"
-                       style="width: 150px; object-fit: cover;"
-                       loading="lazy">
+                  <img
+                    src="{{ member_image_path | relative_url }}"
+                    alt="{{ member.profile.name }}"
+                    class="rounded h-100"
+                    style="width: 150px; object-fit: cover;"
+                    loading="lazy"
+                  >
                 </a>
               </div>
             {% endif %}
