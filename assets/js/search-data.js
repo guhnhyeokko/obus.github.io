@@ -96,11 +96,11 @@ ninja.data = [{
           description: "",
           section: "Support",handler: () => {
               window.location.href = "/support/fusf/";
-            },},{id: "support-jeju-national-university",
-          title: 'Jeju National University',
+            },},{id: "support-korea-institute-of-marine-science-amp-technology-promotion",
+          title: 'Korea Institute of Marine Science &amp;amp; Technology Promotion',
           description: "",
           section: "Support",handler: () => {
-              window.location.href = "/support/jnu/";
+              window.location.href = "/support/kimst/";
             },},{id: "support-national-research-foundation-of-korea-nrf",
           title: 'National Research Foundation of Korea (NRF)',
           description: "",
