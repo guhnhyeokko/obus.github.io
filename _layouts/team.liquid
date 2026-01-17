@@ -3,9 +3,7 @@ layout: page
 ---
 {{ content }}
 
-{% assign groups_order = 'Principal Investigator|Postdoctoral Researcher|PhD Student|Master Student|Researcher|Undergraduate Student|Alumni'
-  | split: '|'
-%}
+{% assign groups_order = 'Principal Investigator|Postdoctoral Researcher|PhD Student|Master Student|Researcher|Undergraduate Student' | split: '|' %}
 
 <!-- Member Count Summary -->
 <p class="mb-5">
@@ -148,3 +146,40 @@ layout: page
     </div>
   {% endif %}
 {% endfor %}
+
+<!-- Alumni Section -->
+{% if site.data.alumni %}
+  <h2 id="alumni" class="mt-5">Alumni</h2>
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Role / Affiliation</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for alumnus in site.data.alumni %}
+          <tr>
+            <td>{{ alumnus.name }}</td>
+            <td>
+              {% if alumnus.role %}
+                {{ alumnus.role }}
+              {% else %}
+                -
+              {% endif %}
+            </td>
+            <td>
+              {% if alumnus.email %}
+                <a href="mailto:{{ alumnus.email }}">{{ alumnus.email }}</a>
+              {% else %}
+                -
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endif %}
