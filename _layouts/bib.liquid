@@ -81,20 +81,28 @@
         {%- assign author_full_name = author.first | append: ' ' | append: author_last_name -%}
         {%- assign member_url = null -%}
 
-        {%- for member in site.members -%}
-          {%- if member.title contains author_full_name -%}
-            {%- assign member_url = member.url | relative_url -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-
-        {%- if member_url == null -%}
-          {%- for alumnus in site.data.alumni -%}
-            {%- if alumnus.name contains author_full_name -%}
-              {%- assign member_url = '/team/#alumni' | relative_url -%}
+        {%- if author_full_name contains 'Dongguk Paeng' or author_full_name contains 'Dong-Guk Paeng' -%}
+          {%- assign member_url = '/professor/' | relative_url -%}
+        {%- else -%}
+          {%- for member in site.members -%}
+            {%- if member.title contains author_full_name -%}
+              {%- if member.redirect -%}
+                {%- assign member_url = member.redirect | relative_url -%}
+              {%- else -%}
+                {%- assign member_url = member.url | relative_url -%}
+              {%- endif -%}
               {%- break -%}
             {%- endif -%}
           {%- endfor -%}
+
+          {%- if member_url == null -%}
+            {%- for alumnus in site.data.alumni -%}
+              {%- if alumnus.name contains author_full_name -%}
+                {%- assign member_url = '/team/#alumni' | relative_url -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
         {%- endif -%}
 
         {%- if forloop.length > 1 -%}
@@ -105,7 +113,7 @@
         {% endif %}
         {%- if author_is_self -%}
           {%- if member_url -%}
-            <a href="{{ member_url }}" style="text-decoration: underline; color: inherit;">
+            <a href="{{ member_url }}">
               <em>
                 {{- author.first }}
                 {{ author_last_html -}}
@@ -119,7 +127,7 @@
           {%- endif -%}
         {%- else -%}
           {%- if member_url -%}
-            <a href="{{ member_url }}" style="text-decoration: underline; color: inherit;">
+            <a href="{{ member_url }}">
               {{- author.first }}
               {{ author_last_html -}}
             </a>
