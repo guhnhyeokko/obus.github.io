@@ -79,7 +79,7 @@ description: "{{ post.description | strip_html | strip_newlines | escape | strip
 {%-endfor-%}
 {%-endif-%}
 {%-for collection in site.collections-%}
-{%-if collection.label != 'posts' and collection.label != 'books'-%}
+{%-if collection.label == 'members' or collection.label == 'publications' or collection.label == 'news' or collection.label == 'projects'-%}
 {%-for item in collection.docs-%}
 {
   {%-if item.inline-%}
