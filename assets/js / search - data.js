@@ -93,26 +93,6 @@ ninja.data = [{
       description: "~~",
         section: "Projects",handler: () => {
   window.location.href = "/projects/underwater_acoustics/";
-},},{id: "support-focused-ultrasound-foundation",
-    title: 'Focused Ultrasound Foundation',
-      description: "",
-        section: "Support",handler: () => {
-  window.location.href = "/support/fusf/";
-},},{id: "support-korea-institute-of-marine-science-amp-technology-promotion",
-    title: 'Korea Institute of Marine Science &amp;amp; Technology Promotion',
-      description: "",
-        section: "Support",handler: () => {
-  window.location.href = "/support/kimst/";
-},},{id: "support-national-research-foundation-of-korea-nrf",
-    title: 'National Research Foundation of Korea (NRF)',
-      description: "",
-        section: "Support",handler: () => {
-  window.location.href = "/support/nrf/";
-},},{id: "support-korea-technology-and-information-promotion-agency-for-smes",
-    title: 'Korea Technology and Information Promotion Agency for SMEs',
-      description: "",
-        section: "Support",handler: () => {
-  window.location.href = "/support/tipa/";
 },},{
   id: 'light-theme',
     title: 'Change theme to light',
