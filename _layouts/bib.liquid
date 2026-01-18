@@ -78,6 +78,25 @@
           {% endfor %}
         {%- endif -%}
 
+        {%- assign author_full_name = author.first | append: ' ' | append: author_last_name -%}
+        {%- assign member_url = null -%}
+
+        {%- for member in site.members -%}
+          {%- if member.title contains author_full_name -%}
+            {%- assign member_url = member.url | relative_url -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if member_url == null -%}
+          {%- for alumnus in site.data.alumni -%}
+            {%- if alumnus.name contains author_full_name -%}
+              {%- assign member_url = '/team/#alumni' | relative_url -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}
             {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
@@ -85,12 +104,26 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author_last_html -}}
-          </em>
+          {%- if member_url -%}
+            <a href="{{ member_url }}" style="text-decoration: underline; color: inherit;">
+              <em>
+                {{- author.first }}
+                {{ author_last_html -}}
+              </em>
+            </a>
+          {%- else -%}
+            <em>
+              {{- author.first }}
+              {{ author_last_html -}}
+            </em>
+          {%- endif -%}
         {%- else -%}
-          {%- if coauthor_url -%}
+          {%- if member_url -%}
+            <a href="{{ member_url }}" style="text-decoration: underline; color: inherit;">
+              {{- author.first }}
+              {{ author_last_html -}}
+            </a>
+          {%- elsif coauthor_url -%}
             <a href="{{ coauthor_url }}">
               {{- author.first }}
               {{ author_last_html -}}
