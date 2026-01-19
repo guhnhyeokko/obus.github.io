@@ -14,4 +14,5 @@ profile_rss: # Add RSS feed URL here
 profile_website: https://jnu-obus.com
 toc:
   sidebar: left
+cv_pdf: Curriculum_Vitae_202304 Paeng English.pdf
 ---
